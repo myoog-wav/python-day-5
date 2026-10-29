@@ -7,20 +7,24 @@ bank_dict = {
 
 }
 
+
+
+
+
 '''
 Task: Welcomes user, and check if the pin  and name is valid and goes together. If not, denied.
 Name: check_valid
-Input: Name, Pin.
+Input: n/a
 Side Effects: Welcomes, and if not valid denied.
-Return: bool.
+Return: bool
 '''
 
 '''
 Task: Prints all of the commands we can do. 
 Name: print_menu
-Input: userinput
+Input: n/a
 Side Effects: Deposit, Withdraw, Balace, Quit
-Return:
+Return: userinput
 '''
 
 '''
@@ -54,3 +58,14 @@ Input: n/a
 Side Effects: n/a
 Return: n/a
 '''
+
+def run_test():
+    withdrawl("Priya") # Ask for amount, if 200 fail.
+    withdrawl("Priya") # Ask for amount, if 100 succeed.
+
+    deposit("Priya") # Asks for amount, if 100 should succeed.
+
+    balance("Priya") # print 100.
+
+    check_valid() # Expecting True if user input valid, and False if not.
+    
